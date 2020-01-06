@@ -2,33 +2,31 @@
 <web-app>
 
 	<servlet>
-		<servlet-name>HelloServlet</servlet-name>
-		<servlet-class>HelloServlet</servlet-class>
-		<load-on-startup>10</load-on-startup>
+		<servlet-name>SubmitServlet</servlet-name>
+		<servlet-class>SubmitServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>HelloServlet</servlet-name>
-		<url-pattern>/hello</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>LoginServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
-		<url-pattern>/login</url-pattern>
+		<servlet-name>SubmitServlet</servlet-name>
+		<url-pattern>/submitServlet</url-pattern>
 	</servlet-mapping>
 	<servlet>
-		<servlet-name>RegisterServlet</servlet-name>
-		<servlet-class>RegisterServlet</servlet-class>
+		<servlet-name>GetOneServlet</servlet-name>
+		<servlet-class>GetOneServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>RegisterServlet</servlet-name>
-		<url-pattern>/register</url-pattern>
+		<servlet-name>GetOneServlet</servlet-name>
+		<url-pattern>/getOneServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetManyServlet</servlet-name>
+		<servlet-class>GetManyServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetManyServlet</servlet-name>
+		<url-pattern>/getManyServlet</url-pattern>
 	</servlet-mapping>
 
 </web-app>
